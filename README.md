@@ -53,6 +53,12 @@ Gam6itko\MultibaseBundle\Doctrine\ConnectionSwitcher:
         - [setEventDispatcher, ['@event_dispatcher']]
 ```
 
+Create database
+```bash
+php bin/console multibase:database:create account database_account 1917
+php bin/console multibase:schema:create account database_account 1917
+```
+
 Finally switch dummy account connection to real when you need. For example do it on user login.
 ```yaml
 # services.yaml

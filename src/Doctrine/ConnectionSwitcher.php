@@ -65,7 +65,7 @@ class ConnectionSwitcher
     /**
      * @return ConnectionSwitcher
      */
-    public function switchTo(string $dbSuffix)//todo-test dispatch
+    public function switchTo(string $dbSuffix)
     {
         $connection = $this->connection;
         $params = $connection->getParams();

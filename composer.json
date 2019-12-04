@@ -1,7 +1,7 @@
 {
     "name": "gam6itko/doctrine-multibase-bundle",
     "license": "MIT",
-    "type": "library",
+    "type": "symfony-bundle",
     "description": "Allows to dynamically switch base doctrine connection to multiple instances",
     "keywords": [
         "symfony",

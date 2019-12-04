@@ -1,0 +1,37 @@
+{
+    "name": "gam6itko/doctrine-multibase-bundle",
+    "license": "MIT",
+    "type": "library",
+    "description": "Allows to dynamically switch base doctrine connection to multiple instances",
+    "keywords": [
+        "symfony",
+        "doctrine",
+        "dynamic-database-connection"
+    ],
+    "authors": [
+        {
+            "name": "Alexander Strizhak",
+            "email": "gam6itko@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Gam6itko\\MultibaseBundle\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.1",
+        "doctrine/dbal": "^2.6",
+        "doctrine/orm": "^2.6",
+        "symfony/event-dispatcher-contracts": "^1.1"
+    },
+    "require-dev": {
+        "symfony/symfony": "^4.4",
+        "doctrine/doctrine-bundle": "^1.9"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}

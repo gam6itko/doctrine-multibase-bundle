@@ -1,0 +1,15 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Gam6itko\MultibaseBundle\Command\Database\CreateCommand:
+        arguments: ['@doctrine']
+
+    Gam6itko\MultibaseBundle\Command\Database\DropCommand:
+        arguments: ['@doctrine']
+
+    Gam6itko\MultibaseBundle\Command\Schema\CreateCommand: ~
+    Gam6itko\MultibaseBundle\Command\Schema\DropCommand: ~
+    Gam6itko\MultibaseBundle\Command\Schema\UpdateCommand: ~

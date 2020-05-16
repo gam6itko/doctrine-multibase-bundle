@@ -55,10 +55,12 @@ class CreateCommand extends Command
         if (in_array($name, $tmpConnection->getSchemaManager()->listDatabases())) {
             $output->writeln(sprintf('<info>Database <comment>%s</comment> for connection named <comment>%s</comment> already exists. Skipped.</info>', $name, $connectionName));
 
-            return;
+            return 0;
         }
 
         $tmpConnection->getSchemaManager()->createDatabase($name);
         $tmpConnection->close();
+
+        return 0;
     }
 }

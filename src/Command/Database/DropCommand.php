@@ -53,7 +53,7 @@ class DropCommand extends Command
         if (!in_array($name, $tmpConnection->getSchemaManager()->listDatabases())) {
             $output->writeln(sprintf('<info>Database <comment>%s</comment> for connection named <comment>%s</comment> is not exists. Skipped.</info>', $name, $connectionName));
 
-            return;
+            return 0;
         }
 
         if ($input->getOption('force')) {
@@ -62,5 +62,7 @@ class DropCommand extends Command
         }
 
         $tmpConnection->close();
+
+        return 0;
     }
 }
